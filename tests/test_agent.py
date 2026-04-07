@@ -16,6 +16,6 @@ def test_graph_invoke():
         return  # Skip if no API key
 
     graph = build_graph()
-    result = graph.invoke({"input": "hello", "messages": []})
+    result = graph.invoke({"input": "hello～～", "messages": []})
     assert "output" in result
     assert len(result["output"]) > 0
